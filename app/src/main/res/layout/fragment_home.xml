@@ -21,7 +21,29 @@
         android:id="@+id/white_background"
         android:layout_width="344dp"
         android:layout_height="468dp"
-        android:background="@drawable/corner_home" />
+        android:background="@drawable/corner_home"
 
 
+    <GridLayout
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="3"
+        >
+
+
+        <Button
+            android:id="@+id/send_money_button"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="100dp"
+            />
+
+
+    </GridLayout>
+    />
 </FrameLayout>

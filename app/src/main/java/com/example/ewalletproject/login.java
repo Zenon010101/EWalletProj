@@ -25,7 +25,7 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login); // Ensure this matches your XML file name
 
-        editText = findViewById(R.id.editTextNumber2);
+        editText = findViewById(R.id.PIN);
         final Animation clickAnimation = AnimationUtils.loadAnimation(this, R.anim.button_click);
         // Button IDs for numbers
         int[] buttonIds = {
