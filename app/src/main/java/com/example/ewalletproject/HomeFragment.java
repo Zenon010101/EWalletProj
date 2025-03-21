@@ -7,6 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,7 +62,27 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        //return inflater.inflate(R.layout.fragment_home, container, false);
+        ImageButton sendButton = view.findViewById(R.id.send_money_button);
+        ImageButton cashInButton = view.findViewById(R.id.cash_in_button);
+        ImageButton billsButton = view.findViewById(R.id.bills);
+        ImageButton transferButton = view.findViewById(R.id.transfer_money);
+
+        // Click animation
+        applyClickAnimation(sendButton);
+        applyClickAnimation(cashInButton);
+        applyClickAnimation(billsButton);
+        applyClickAnimation(transferButton);
+
+        return view;
     }
+    private void applyClickAnimation(ImageButton button) {
+        button.setOnClickListener(v -> {
+            v.animate().scaleX(0.9f).scaleY(0.9f).setDuration(100)
+                    .withEndAction(() -> v.animate().scaleX(1f).scaleY(1f).setDuration(100));
+        });
+    }
+
 }

@@ -129,7 +129,7 @@
         android:gravity="center">
 
         <ImageButton
-            android:id="@+id/another_button_1"
+            android:id="@+id/transfer_money"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
