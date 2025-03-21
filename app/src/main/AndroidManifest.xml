@@ -13,6 +13,19 @@
         android:theme="@style/Theme.EWalletProject"
         tools:targetApi="31">
         <activity
+            android:name=".cashInActivity"
+            android:exported="false"
+            android:theme="@style/Theme.EWalletProject" />
+        <activity
+            android:name=".transferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".billsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sendMoneyActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

@@ -1,5 +1,6 @@
 package com.example.ewalletproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -75,6 +76,24 @@ public class HomeFragment extends Fragment {
         applyClickAnimation(cashInButton);
         applyClickAnimation(billsButton);
         applyClickAnimation(transferButton);
+
+        sendButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(),sendMoneyActivity.class);
+            startActivity(intent);
+        });
+
+        billsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), billsActivity.class);
+            startActivity(intent);
+        });
+        cashInButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), cashInActivity.class);
+            startActivity(intent);
+        });
+        transferButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), transferActivity.class);
+            startActivity(intent);
+        });
 
         return view;
     }
