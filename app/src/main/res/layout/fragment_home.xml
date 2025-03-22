@@ -16,7 +16,7 @@
         android:textSize="20dp"
         android:fontFamily="@font/boldonse_regular"
         android:textAllCaps="true"
-        android:text="Hello User!" />
+        android:text="Hello!" />
     <TextView
         android:id="@+id/amount"
         android:layout_width="wrap_content"

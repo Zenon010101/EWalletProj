@@ -1,12 +1,12 @@
 package com.example.ewalletproject;
 
 import android.os.Bundle;
-
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageButton;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class billsActivity extends AppCompatActivity {
 
@@ -15,10 +15,25 @@ public class billsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_bills);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        // Find buttons by ID
+        ImageButton electricButton = findViewById(R.id.electric_bill);
+        ImageButton waterButton = findViewById(R.id.water_bill);
+
+        // Load animations
+        Animation clickAnimation = AnimationUtils.loadAnimation(this, R.anim.button_click);
+
+
+
+        // Apply animation on click
+        electricButton.setOnClickListener(v -> {
+            v.startAnimation(clickAnimation);
+            // TODO: Add functionality (like opening a new activity)
         });
+
+        waterButton.setOnClickListener(v -> {
+            v.startAnimation(clickAnimation);
+        });
+
     }
 }
