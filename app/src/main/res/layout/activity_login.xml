@@ -33,6 +33,7 @@
         android:layout_marginTop="64dp"
         android:ems="10"
         android:hint="PIN"
+        android:background="@drawable/background_pin"
         android:inputType="numberPassword"
         android:maxLength="4"
         android:textAlignment="center"

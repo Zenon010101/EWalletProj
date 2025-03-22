@@ -5,6 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".qr_code_activity">
+    tools:context=".qr_code_activity"
+    android:background="@drawable/gradient_bg">
+
+
+    <ImageView
+        android:layout_width="492dp"
+        android:layout_height="461dp"
+        android:src="@drawable/qr_code_working"
+        tools:layout_editor_absoluteX="-24dp"
+        tools:layout_editor_absoluteY="124dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
