@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EWalletProject"
         tools:targetApi="31">
         <activity
+            android:name=".qr_code_activity"
+            android:exported="false" />
+        <activity
             android:name=".cashInActivity"
             android:exported="false"
             android:theme="@style/Theme.EWalletProject" />

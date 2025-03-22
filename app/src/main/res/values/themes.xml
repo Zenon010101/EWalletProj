@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.EWalletProject" parent="Base.Theme.EWalletProject" />
+
+    <style name="MyDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">#8BC34A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#28A02D</item>
+    </style>
 </resources>

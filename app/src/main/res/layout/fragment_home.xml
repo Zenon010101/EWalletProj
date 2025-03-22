@@ -13,14 +13,27 @@
         android:textAlignment="center"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="30dp"
-        android:textSize="30dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/boldonse_regular"
+        android:textAllCaps="true"
         android:text="Hello User!" />
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="150dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/boldonse_regular"
+        android:textAllCaps="true"
+        android:text="₱00.00" />
 
     <View
-        android:layout_gravity="center"
         android:id="@+id/white_background"
         android:layout_width="344dp"
-        android:layout_height="468dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
         android:background="@drawable/corner_home" />
 
     <LinearLayout
@@ -31,7 +44,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="180dp">
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
@@ -41,6 +54,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:scaleType="fitCenter"
+                android:gravity="center_horizontal"
                 android:background="@android:color/transparent"
                 android:src="@drawable/send_money" />
 
@@ -49,6 +63,7 @@
                 android:layout_height="wrap_content"
                 android:text="Send"
                 android:textColor="@color/black"
+                android:gravity="center_horizontal"
                 android:textAlignment="center"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -59,7 +74,7 @@
             android:layout_width="10dp"
             android:layout_height="1dp" />
         <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center">
@@ -88,7 +103,7 @@
             android:layout_height="1dp" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
@@ -96,7 +111,6 @@
                 android:id="@+id/bills"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-
                 android:scaleType="fitCenter"
                 android:background="@android:color/transparent"
                 android:src="@drawable/bills_icon" />
@@ -113,7 +127,7 @@
 
     </LinearLayout>
 
-    <View android:layout_width="match_parent" android:layout_height="20dp" />
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -121,9 +135,10 @@
         android:orientation="horizontal"
         android:gravity="center"/>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="289dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="160dp"
         android:layout_marginLeft="100dp"
         android:orientation="vertical"
         android:gravity="center">
@@ -146,6 +161,33 @@
     </LinearLayout>
 
     <View android:layout_width="20dp" android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="280dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/Qr_Code"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/qr_code" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qr Code"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+<View android:layout_width="20dp" android:layout_height="1dp" />
 
 
 </FrameLayout>
